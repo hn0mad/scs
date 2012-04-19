@@ -1,0 +1,18 @@
+Secure Conversation System
+
+This is a VERY basic app for encrypting a coversation held between two 
+parties. It is NOT for transfering files thats what scp is for. Nor for 
+holding confrences.
+
+Maximum message size is 32kb.
+There are no passwords required, and there is no way to verify who connects
+to a listening scs.
+
+Confirmation of this is left up to you. scs encrypts messages sent by either
+part and decrypts them at the other end.
+
+Messages are encrypted by a 256bit AES key, which is itself encrypted by
+512bit RSA priv/pub key pairs, the public keys are exchanged at connection.
+All keys are randomly generated and not at all human controlable.
+
+Enjoy.
